@@ -89,6 +89,7 @@ function setup() {
   reset = createSprite(300,100)
   reset.addImage("reset", reset_image);
   reset.scale = 0.15
+  reset.visible = false;
   
 
 
@@ -148,6 +149,7 @@ function draw() {
     // mostra a mensagem de game over
     gameover.visible = true
     // para a movimentação do chão
+    reset.visible = true;
     ground.velocityX = 0
     // muda a animação do trex para "trex_collided"
     trex.changeAnimation("trex_collided", trex_collided_image)
@@ -157,6 +159,7 @@ function draw() {
     if(mousePressedOver(reset)){
       console.log("Reiniciar o Jogo")
       resetF()
+
     }
 
 
