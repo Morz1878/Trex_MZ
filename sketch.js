@@ -51,7 +51,7 @@ function preload() {
 
   jumpsound = loadSound("jump.mp3")
   diesound = loadSound("die.mp3")
-  checkpointsound = loadSound("checkPoint.mp3")
+  checkpointsound = loadSound("checkpoint.mp3")
 
   //reset
   reset_image = loadImage("reset-icon-614x460.png")
